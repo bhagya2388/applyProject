@@ -23,7 +23,7 @@ describe("Staff Logic Apply to QA Engineer",()=>{
         driver.quit()
     })
 
-    it('Click Apply adn Submit Form', async ()=> {
+    it('Click Apply and Submit Form', async ()=> {
         await driver.findElement(By.xpath("//a[text()='Apply'][1]")).click();
         driver.wait(until.elementIsVisible(await driver.findElement(By.id('first_name'))),60000);
         assert.doesNotThrow(() => {
